@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Agla Government Primary School",
+    "location": "Kayetpara",
+    "school_img_id": 1,
+    "ht_img_id": 1,
+    "ht_name": "Moshiur Rahman",
+    "ht_quote": "There is no alternate way to success other than education",
+    "year_established": "1992",
+    "total_students": "32",
+    "total_teachers": "3",
+    "total_applicants": "6"
+  },
+  {
+    "name": "Kanchan Government Primary School",
+    "location": "Kanchan",
+    "school_img_id": 1,
+    "ht_img_id": 2,
+    "ht_name": "Shilpi Begum",
+    "ht_quote": "Be a wonderful role model because you will be the window through which many children will see their future",
+    "year_established": "2001",
+    "total_students": "41",
+    "total_teachers": "5",
+    "total_applicants": "10"
+  },
+  {
+    "name": "Daudpur Government Primary School",
+    "location": "Daudpur",
+    "school_img_id": 1,
+    "ht_img_id": 3,
+    "ht_name": "Nusrat Parvin",
+    "ht_quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+    "year_established": "1996",
+    "total_students": "28",
+    "total_teachers": "3",
+    "total_applicants": "9"
+  },
+  {
+    "name": "Kendua Government Primary School",
+    "location": "Golakandail",
+    "school_img_id": 1,
+    "ht_img_id": 4,
+    "ht_name": "Ataur Alam",
+    "ht_quote": "Education is the best weapon you can use to change the world",
+    "year_established": "1988",
+    "total_students": "54",
+    "total_teachers": "6",
+    "total_applicants": "13"
+  },
+  {
+    "name": "Bhulta Government Primary School",
+    "location": "Bhulta",
+    "school_img_id": 1,
+    "ht_img_id": 5,
+    "ht_name": "Tanjiba Jerin",
+    "ht_quote": "The pen is mightier than the sword",
+    "year_established": "1985",
+    "total_students": "45",
+    "total_teachers": "3",
+    "total_applicants": "12"
+  },
+  {
+    "name": "Deboi Government Primary School",
+    "location": "Rupganj",
+    "school_img_id": 1,
+    "ht_img_id": 6,
+    "ht_name": "Dipa Das",
+    "ht_quote": "A teacher's influnce never stops, it goes on till the day you die",
+    "year_established": "1992",
+    "total_students": "24",
+    "total_teachers": "2",
+    "total_applicants": "11"
+  },
+  {
+    "name": "Birabo Government Primary School",
+    "location": "Bholabo",
+    "school_img_id": 1,
+    "ht_img_id": 7,
+    "ht_name": "Pori Bhanu Akhter",
+    "ht_quote": "A good education can change anyone. A good teacher can change everything.",
+    "year_established": "1992",
+    "total_students": "18",
+    "total_teachers": "2",
+    "total_applicants": "9"
+  }
+]
