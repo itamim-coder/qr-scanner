@@ -115,4 +115,3 @@ Built with ❤️ using React Native & Expo.
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-You can copy this directly into your `README.md` file. Let me know if you’d like to include a screenshot section or live demo link too!
