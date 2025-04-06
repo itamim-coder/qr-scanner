@@ -1,50 +1,118 @@
-# Welcome to your Expo app 👋
+# 📱 QR Code Scanner App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple and powerful React Native application built using Expo that allows users to scan QR codes, verify them with a backend server, and view a history of scanned codes. The app uses `expo-camera` for scanning, `AsyncStorage` for storing history locally, and `expo-router` for screen navigation.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
+- 🔍 **QR Code Scanning**  
+  Scan QR codes using the device camera with vibration feedback on successful scan.
+
+- 🔐 **QR Code Verification**  
+  After scanning, the QR code is sent to a backend API for verification. The app displays alerts based on the server response (e.g., Verified or Invalid).
+
+- 💾 **Save Scanned Data**  
+  Users can choose to save valid QR data locally using AsyncStorage.
+
+- 🕘 **Scanned History**  
+  View all previously saved QR codes in a clean and styled history screen.
+
+- 🧭 **Navigation**  
+  Smooth screen transitions using `expo-router`.
+
+## 🔧 Tech Stack
+
+- **React Native** with **Expo**
+- **TypeScript**
+- **expo-camera** for QR scanning
+- **AsyncStorage** for local persistence
+- **expo-router** for navigation
+- **Tailwind CSS (via NativeWind)** for styling
+
+---
+
+## 📲 How It Works
+
+### 🔹 Scanner Screen (`/scanner`)
+- Opens the device camera to scan QR codes.
+- On successful scan:
+  - Vibrates the device.
+  - Sends scanned data to the backend server (`/verify` endpoint).
+  - Shows a modal with the scanned content.
+  - Allows saving data to local storage or re-scanning.
+
+### 🔹 History Screen (`/history`)
+- Retrieves stored scanned data from AsyncStorage.
+- Displays the data in a styled list.
+- Includes a button to navigate back to the scanner.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/qr-code-scanner-app.git
+   cd qr-code-scanner-app
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the app**
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Scan QR and Verify**
+   - Use the scanner to scan any QR code.
+   - The app will send a POST request to your backend at `http://192.168.x.x:3000/verify`.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
+## 📌 Notes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Ensure the backend URL in `API_URL` (`Scanner.tsx`) matches your local IP.
+- Make sure your backend server is running and accessible from your device.
 
-## Get a fresh project
+## 🧪 Backend API
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+**Endpoint**: `POST /verify`  
+**Payload**:
+```json
+{
+  "qrData": "scanned_qr_content"
+}
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Expected Response**:
+```json
+{
+  "status": "Verified" | "Invalid"
+}
+```
+---
 
-## Learn more
+## 🙌 Acknowledgments
 
-To learn more about developing your project with Expo, look at the following resources:
+Built with ❤️ using React Native & Expo.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 👨‍💻 Author
+
+- Developed by [Imtiaz Tamim](https://github.com/itamim-coder)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+```
+
+You can copy this directly into your `README.md` file. Let me know if you’d like to include a screenshot section or live demo link too!
