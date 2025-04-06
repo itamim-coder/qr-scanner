@@ -110,8 +110,5 @@ Built with ❤️ using React Native & Expo.
 
 ---
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
-```
 
